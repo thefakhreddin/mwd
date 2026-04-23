@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m venv .venv)",
+      "Bash(.venv/Scripts/pip install *)",
+      "Bash(.venv/Scripts/python -m ipykernel install --user --name=mwd-venv --display-name=\"Python \\(mwd-venv\\)\")",
+      "Bash(.venv/Scripts/python -c \"import pandas, matplotlib; print\\('OK'\\)\")",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(git rm *)",
+      "Bash(.venv/Scripts/python -)"
+    ]
+  }
+}
